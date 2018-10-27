@@ -26,7 +26,7 @@ HRSscraper is configured to run from the terminal via the Mac OS X Python interp
 
 If you wish to run the application on Windows or Linux, modify the first line of `HRSscraper.py` according to the requirements of your operating system. Alternatively, run `HRSscraper.py` directly from Python's IDLE.
 
-Once started, the application will create a `/data` directory to store the downloaded and processed HTML files. Server requests will be once every 15 seconds.
+Once started, the application will create a `/data` directory to store the downloaded and processed HTML files. Server requests will be made once every 15 seconds.
 
 The repository also includes a `/_data` directory that already contains all of the HTML files obtained from the Hawaii State Legislature's website (current as of Friday, October 26, 2018).
 
