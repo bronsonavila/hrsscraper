@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 import os
+import time
 import requests
 import bs4
 
@@ -57,6 +58,9 @@ while not taskComplete:
         # Throws an exception if the given CSS selector is not found:
         nextPath = setNextPath(soup, 'center > table > tr > td:nth-of-type(3)')
         url = 'https://www.capitol.hawaii.gov' + nextPath
+
+        # Wait 15 seconds before making the next request:
+        time.sleep(15)
     except:
         # End the process when there is no longer a valid "nextPath" to access:
         taskComplete = True
