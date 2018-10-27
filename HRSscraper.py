@@ -10,7 +10,7 @@ url = 'https://www.capitol.hawaii.gov/hrscurrent/Vol01_Ch0001-0042F/01-USCON/USC
 
 # Create "/data" directory, and set it to be the current working directory:
 os.makedirs('data', exist_ok=True)
-projectDataPath = os.getcwd() + '/data/'    # Keep ending slash (see line 51)
+projectDataPath = os.getcwd() + '/data/'    # Necessary slash at end.
 os.chdir(projectDataPath)
 
 
